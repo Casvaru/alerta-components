@@ -1,13 +1,17 @@
 {
 	"name": "alerta-dashboard-design-system",
 	"version": "1.0.0",
+	"main": "dist/main.js",
+  "module": "dist/main.js",
 	"files": [
 		"**/*.js",
 		"**/*.css"
 	],
 	"type": "module",
 	"scripts": {
-		"dev": "vite"
+		"build": "rollup -c",
+		"dev": "vite",
+		"prepublishOnly": "npm run build"
 	},
 	"dependencies": {
 		"lit": "^3.2.0",
@@ -15,7 +19,9 @@
 	},
 	"devDependencies": {
 		"standard": "^17.1.2",
-		"vite": "^5.4.7"
+		"vite": "^5.4.7",
+		"rollup": "^2.0.0",
+    "rollup-plugin-terser": "^7.0.2"
 	},
 	"eslintConfig": {
 		"extends": "standard"
