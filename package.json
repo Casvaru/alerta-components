@@ -1,5 +1,5 @@
 {
-	"name": "alerta-dashboard-design-system",
+	"name": "alerta-components",
 	"version": "1.0.0",
 	"main": "dist/main.js",
   "module": "dist/main.js",
